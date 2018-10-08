@@ -6,16 +6,16 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "RS232 data sniffer"
-Date ""
-Rev ""
-Comp ""
+Date "2018-10-08"
+Rev "1"
+Comp "Switchcraft AS"
 Comment1 ""
-Comment2 ""
+Comment2 "EH"
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L conn:DB9_Female_MountingHoles J2
+L Connector:DB9_Female_MountingHoles J2
 U 1 1 5BBC59FD
 P 6800 1650
 F 0 "J2" H 6980 1653 50  0000 L CNN
@@ -26,7 +26,7 @@ F 3 "" H 6800 1650 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L conn:DB9_Male_MountingHoles J1
+L Connector:DB9_Male_MountingHoles J1
 U 1 1 5BBC5AD9
 P 1600 1650
 F 0 "J1" H 1520 2342 50  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 1600 1650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L conn:USB_B J12
+L Connector:USB_B J12
 U 1 1 5BBC5C5A
 P 2250 5000
 F 0 "J12" H 2305 5467 50  0000 C CNN
@@ -50,25 +50,25 @@ $EndComp
 Wire Wire Line
 	1900 1250 2000 1250
 Wire Wire Line
-	6500 1350 1900 1350
+	6500 1350 5450 1350
 Wire Wire Line
-	1900 1450 6500 1450
+	1900 1450 5950 1450
 Wire Wire Line
-	6500 1550 1900 1550
+	6500 1550 5550 1550
 Wire Wire Line
-	6500 1750 1900 1750
+	6500 1750 5650 1750
 Wire Wire Line
 	1900 1850 3750 1850
 Wire Wire Line
-	6500 1950 1900 1950
+	6500 1950 5750 1950
 Wire Wire Line
-	1900 2050 6500 2050
+	1900 2050 6250 2050
 Wire Wire Line
 	1900 1650 4550 1650
 Wire Wire Line
 	3900 5100 2550 5100
 $Comp
-L device:Ferrite_Bead_Small L1
+L Device:Ferrite_Bead_Small L1
 U 1 1 5BBC6AA4
 P 2850 4800
 F 0 "L1" V 2613 4800 50  0000 C CNN
@@ -79,18 +79,7 @@ F 3 "" H 2850 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L interface:MAX232 U1
-U 1 1 5BBC6B9D
-P 8700 3900
-F 0 "U1" H 9250 4950 50  0000 C CNN
-F 1 "MAX232" H 8250 4950 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8750 2850 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 8700 4000 50  0001 C CNN
-	1    8700 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:LED D3
+L Device:LED D3
 U 1 1 5BBC706D
 P 6550 5500
 F 0 "D3" V 6588 5383 50  0000 R CNN
@@ -101,7 +90,7 @@ F 3 "" H 6550 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R3
+L Device:R R3
 U 1 1 5BBC71BF
 P 6550 5150
 F 0 "R3" H 6620 5196 50  0000 L CNN
@@ -112,7 +101,7 @@ F 3 "" H 6550 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C5
+L Device:C C5
 U 1 1 5BBC7218
 P 3500 4500
 F 0 "C5" H 3615 4546 50  0000 L CNN
@@ -163,7 +152,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 4800 3150 4450
 $Comp
-L device:C C8
+L Device:C C8
 U 1 1 5BBC833F
 P 2850 6200
 F 0 "C8" H 2965 6246 50  0000 L CNN
@@ -174,7 +163,7 @@ F 3 "" H 2850 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C7
+L Device:CP C7
 U 1 1 5BBC83E1
 P 2450 6200
 F 0 "C7" H 2568 6246 50  0000 L CNN
@@ -225,7 +214,7 @@ Connection ~ 2850 6000
 Wire Wire Line
 	2850 6000 2850 6050
 $Comp
-L device:C C6
+L Device:C C6
 U 1 1 5BBC97FE
 P 2700 5400
 F 0 "C6" H 2815 5446 50  0000 L CNN
@@ -368,7 +357,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 5700 5500 5700
 $Comp
-L device:LED D4
+L Device:LED D4
 U 1 1 5BBD4431
 P 6900 5500
 F 0 "D4" V 6938 5383 50  0000 R CNN
@@ -379,7 +368,7 @@ F 3 "" H 6900 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R4
+L Device:R R4
 U 1 1 5BBD4438
 P 6900 5150
 F 0 "R4" H 6970 5196 50  0000 L CNN
@@ -466,22 +455,18 @@ F 3 "" H 2000 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:GS2 J15
+L Jumper:SolderJumper_2_Open J15
 U 1 1 5BBDDE37
 P 1700 6200
-F 0 "J15" V 1495 6200 50  0000 C CNN
-F 1 "GS2" V 1586 6200 50  0000 C CNN
+F 0 "J15" H 1550 6300 50  0000 C CNN
+F 1 "GS2" H 1750 6300 50  0000 C CNN
 F 2 "Connectors:GS2" V 1774 6200 50  0001 C CNN
 F 3 "" H 1700 6200 50  0001 C CNN
 	1    1700 6200
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1400 6200 1500 6200
-Wire Wire Line
 	1400 6200 1400 6350
-Wire Wire Line
-	1900 6200 2000 6200
 Wire Wire Line
 	2000 6200 2000 6350
 $Comp
@@ -496,12 +481,12 @@ F 3 "" H 2000 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 2350 2000 1250
+	2000 2350 2000 2250
 Connection ~ 2000 1250
 Wire Wire Line
-	2000 1250 6500 1250
+	2000 1250 5850 1250
 $Comp
-L device:C C2
+L Device:C C2
 U 1 1 5BBE6022
 P 9700 3150
 F 0 "C2" H 9815 3196 50  0000 L CNN
@@ -514,7 +499,7 @@ $EndComp
 Wire Wire Line
 	8700 2600 8700 2700
 $Comp
-L device:C C1
+L Device:C C1
 U 1 1 5BBE9A35
 P 7700 3150
 F 0 "C1" H 7815 3196 50  0000 L CNN
@@ -533,7 +518,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 3000 9700 3000
 $Comp
-L device:C C3
+L Device:C C3
 U 1 1 5BBEFC8B
 P 10450 3700
 F 0 "C3" H 10565 3746 50  0000 L CNN
@@ -544,7 +529,7 @@ F 3 "" H 10450 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C4
+L Device:C C4
 U 1 1 5BBEFCE7
 P 10150 4000
 F 0 "C4" H 10265 4046 50  0000 L CNN
@@ -590,10 +575,10 @@ Wire Wire Line
 	9500 3500 10450 3500
 Wire Wire Line
 	9500 3800 10150 3800
-Text GLabel 3100 2700 0    50   Input ~ 0
+Text GLabel 3100 2900 3    50   Input ~ 0
 Sniffer
 $Comp
-L diode:1N4148 D1
+L Diode:LL4148 D1
 U 1 1 5BC12AB9
 P 3750 2450
 F 0 "D1" V 3796 2371 50  0000 R CNN
@@ -604,7 +589,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3750 2450 50  
 	0    -1   -1   0   
 $EndComp
 $Comp
-L diode:1N4148 D2
+L Diode:LL4148 D2
 U 1 1 5BC14833
 P 4550 2450
 F 0 "D2" V 4596 2371 50  0000 R CNN
@@ -615,7 +600,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4550 2450 50  
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R2
+L Device:R R2
 U 1 1 5BC1499D
 P 5050 2450
 F 0 "R2" H 5120 2496 50  0000 L CNN
@@ -626,7 +611,7 @@ F 3 "" H 5050 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R1
+L Device:R R1
 U 1 1 5BC16265
 P 4250 2450
 F 0 "R1" H 4320 2496 50  0000 L CNN
@@ -653,13 +638,13 @@ Wire Wire Line
 Connection ~ 3750 2200
 Connection ~ 3750 1850
 Wire Wire Line
-	3750 1850 6500 1850
+	3750 1850 6150 1850
 Wire Wire Line
 	4550 2200 4550 1650
 Connection ~ 4550 2200
 Connection ~ 4550 1650
 Wire Wire Line
-	4550 1650 6500 1650
+	4550 1650 6050 1650
 Wire Wire Line
 	3750 2600 3750 2700
 Wire Wire Line
@@ -676,13 +661,11 @@ Wire Wire Line
 	4250 2700 4550 2700
 Connection ~ 4250 2700
 Connection ~ 4550 2700
-Wire Wire Line
-	3550 2700 3750 2700
 Connection ~ 3750 2700
 Text GLabel 9950 4950 2    50   Input ~ 0
 Sniffer
 $Comp
-L conn:Conn_01x03 J14
+L Connector_Generic:Conn_01x03 J14
 U 1 1 5BC59D6E
 P 5800 6000
 F 0 "J14" H 5880 6042 50  0000 L CNN
@@ -695,7 +678,7 @@ $EndComp
 Wire Wire Line
 	5600 6100 5500 6100
 $Comp
-L conn:Conn_01x08 J13
+L Connector_Generic:Conn_01x08 J13
 U 1 1 5BC5F639
 P 6200 5000
 F 0 "J13" H 6280 4992 50  0000 L CNN
@@ -721,39 +704,33 @@ Wire Wire Line
 	5500 4800 5950 4800
 Wire Wire Line
 	5950 4600 5950 4800
-Wire Wire Line
-	5950 4600 7300 4600
 Connection ~ 5950 4800
 Wire Wire Line
 	5950 4800 6000 4800
 $Comp
-L conn:GS2 J6
+L Jumper:SolderJumper_2_Open J6
 U 1 1 5BC7B878
 P 7500 4200
-F 0 "J6" V 7295 4200 50  0000 C CNN
-F 1 "GS2" V 7386 4200 50  0000 C CNN
+F 0 "J6" H 7350 4300 50  0000 C CNN
+F 1 "GS2" H 7550 4300 50  0000 C CNN
 F 2 "Connectors:GS2" V 7574 4200 50  0001 C CNN
 F 3 "" H 7500 4200 50  0001 C CNN
 	1    7500 4200
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L conn:GS2 J10
+L Jumper:SolderJumper_2_Open J10
 U 1 1 5BC84ECA
 P 7500 4600
-F 0 "J10" V 7295 4600 50  0000 C CNN
-F 1 "GS2" V 7386 4600 50  0000 C CNN
+F 0 "J10" H 7350 4700 50  0000 C CNN
+F 1 "GS2" H 7550 4700 50  0000 C CNN
 F 2 "Connectors:GS2" V 7574 4600 50  0001 C CNN
 F 3 "" H 7500 4600 50  0001 C CNN
 	1    7500 4600
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7700 4600 7900 4600
-Wire Wire Line
-	7700 4200 7900 4200
 $Comp
-L ftdi:FT232RL U2
+L Interface_USB:FT232RL U2
 U 1 1 5BBC58D4
 P 4700 5400
 F 0 "U2" H 5300 6300 50  0000 C CNN
@@ -766,28 +743,22 @@ $EndComp
 Wire Wire Line
 	5500 4700 5650 4700
 Wire Wire Line
-	7300 4400 5850 4400
-Wire Wire Line
 	5850 4400 5850 4900
 Connection ~ 5850 4900
 Wire Wire Line
 	5850 4900 5500 4900
-Wire Wire Line
-	7300 4000 5750 4000
 Wire Wire Line
 	5750 4000 5750 5000
 Connection ~ 5750 5000
 Wire Wire Line
 	5750 5000 6000 5000
 Wire Wire Line
-	7300 4200 5650 4200
-Wire Wire Line
 	5650 4200 5650 4700
 Connection ~ 5650 4700
 Wire Wire Line
 	5650 4700 6000 4700
 $Comp
-L conn:Conn_01x01 J5
+L Connector_Generic:Conn_01x01 J5
 U 1 1 5BC98F3D
 P 9800 4000
 F 0 "J5" H 9880 4042 50  0000 L CNN
@@ -798,7 +769,7 @@ F 3 "~" H 9800 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 J7
+L Connector_Generic:Conn_01x01 J7
 U 1 1 5BC98FAB
 P 9800 4200
 F 0 "J7" H 9880 4242 50  0000 L CNN
@@ -809,7 +780,7 @@ F 3 "~" H 9800 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 J11
+L Connector_Generic:Conn_01x01 J11
 U 1 1 5BC98FF9
 P 9800 4600
 F 0 "J11" H 9880 4642 50  0000 L CNN
@@ -820,46 +791,40 @@ F 3 "~" H 9800 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:GS2 J4
+L Jumper:SolderJumper_2_Open J4
 U 1 1 5BCAB969
 P 7500 4000
-F 0 "J4" V 7295 4000 50  0000 C CNN
-F 1 "GS2" V 7386 4000 50  0000 C CNN
+F 0 "J4" H 7350 4100 50  0000 C CNN
+F 1 "GS2" H 7550 4100 50  0000 C CNN
 F 2 "Connectors:GS2" V 7574 4000 50  0001 C CNN
 F 3 "" H 7500 4000 50  0001 C CNN
 	1    7500 4000
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L conn:GS2 J8
+L Jumper:SolderJumper_2_Open J8
 U 1 1 5BCAB9BB
 P 7500 4400
-F 0 "J8" V 7295 4400 50  0000 C CNN
-F 1 "GS2" V 7386 4400 50  0000 C CNN
+F 0 "J8" H 7350 4500 50  0000 C CNN
+F 1 "GS2" H 7550 4500 50  0000 C CNN
 F 2 "Connectors:GS2" V 7574 4400 50  0001 C CNN
 F 3 "" H 7500 4400 50  0001 C CNN
 	1    7500 4400
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7700 4400 7900 4400
-Wire Wire Line
-	7900 4000 7700 4000
 $Comp
-L conn:GS2 J3
+L Jumper:SolderJumper_2_Open J3
 U 1 1 5BCB3B70
 P 3350 2700
-F 0 "J3" V 3145 2700 50  0000 C CNN
-F 1 "GS2" V 3236 2700 50  0000 C CNN
+F 0 "J3" V 3350 2550 50  0000 C CNN
+F 1 "GS2" V 3450 2550 50  0000 C CNN
 F 2 "Connectors:GS2" V 3424 2700 50  0001 C CNN
 F 3 "" H 3350 2700 50  0001 C CNN
 	1    3350 2700
-	0    1    1    0   
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 2700 3150 2700
 $Comp
-L conn:Conn_01x01 J9
+L Connector_Generic:Conn_01x01 J9
 U 1 1 5BCC33CA
 P 9800 4400
 F 0 "J9" H 9880 4442 50  0000 L CNN
@@ -884,4 +849,134 @@ Wire Wire Line
 	9500 4000 9600 4000
 Wire Wire Line
 	9500 4200 9600 4200
+$Comp
+L power:GND #PWR0120
+U 1 1 5BBAFF09
+P 2700 5650
+F 0 "#PWR0120" H 2700 5400 50  0001 C CNN
+F 1 "GND" H 2705 5477 50  0000 C CNN
+F 2 "" H 2700 5650 50  0001 C CNN
+F 3 "" H 2700 5650 50  0001 C CNN
+	1    2700 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5650 2700 5600
+Connection ~ 2700 5600
+$Comp
+L Interface_UART:MAX232 U1
+U 1 1 5BBBDA6F
+P 8700 3900
+F 0 "U1" H 8700 5278 50  0000 C CNN
+F 1 "MAX232" H 8700 5187 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8750 2850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 8700 4000 50  0001 C CNN
+	1    8700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2700 3750 2700
+Wire Wire Line
+	5850 4400 7350 4400
+Wire Wire Line
+	5950 4600 7350 4600
+Wire Wire Line
+	7650 4600 7900 4600
+Wire Wire Line
+	7650 4400 7900 4400
+Wire Wire Line
+	5750 4000 7350 4000
+Wire Wire Line
+	5650 4200 7350 4200
+Wire Wire Line
+	7650 4000 7900 4000
+Wire Wire Line
+	7650 4200 7900 4200
+Wire Wire Line
+	1400 6200 1550 6200
+Wire Wire Line
+	1850 6200 2000 6200
+Wire Wire Line
+	2600 2750 2600 2250
+Wire Wire Line
+	2600 2250 2000 2250
+Connection ~ 2000 2250
+Wire Wire Line
+	2000 2250 2000 1250
+$Comp
+L Connector_Generic:Conn_01x02 J17
+U 1 1 5BC4C419
+P 2700 2950
+F 0 "J17" V 2650 2650 50  0000 L CNN
+F 1 "Conn_01x02" V 2800 2600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2700 2950 50  0001 C CNN
+F 3 "~" H 2700 2950 50  0001 C CNN
+	1    2700 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2700 3100 2700
+Wire Wire Line
+	2700 2700 2700 2750
+Wire Wire Line
+	3100 2900 3100 2700
+Connection ~ 3100 2700
+Wire Wire Line
+	3100 2700 2700 2700
+$Comp
+L Connector_Generic:Conn_01x09 J16
+U 1 1 5BC56050
+P 5850 2650
+F 0 "J16" V 5974 2646 50  0000 C CNN
+F 1 "Conn_01x09" V 6065 2646 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H 5850 2650 50  0001 C CNN
+F 3 "~" H 5850 2650 50  0001 C CNN
+	1    5850 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 2450 6250 2050
+Connection ~ 6250 2050
+Wire Wire Line
+	6250 2050 6500 2050
+Wire Wire Line
+	6150 2450 6150 1850
+Connection ~ 6150 1850
+Wire Wire Line
+	6150 1850 6500 1850
+Wire Wire Line
+	6050 2450 6050 1650
+Connection ~ 6050 1650
+Wire Wire Line
+	6050 1650 6500 1650
+Wire Wire Line
+	5950 2450 5950 1450
+Connection ~ 5950 1450
+Wire Wire Line
+	5950 1450 6500 1450
+Wire Wire Line
+	5850 2450 5850 1250
+Connection ~ 5850 1250
+Wire Wire Line
+	5850 1250 6500 1250
+Wire Wire Line
+	5750 2450 5750 1950
+Connection ~ 5750 1950
+Wire Wire Line
+	5750 1950 1900 1950
+Wire Wire Line
+	5650 2450 5650 1750
+Connection ~ 5650 1750
+Wire Wire Line
+	5650 1750 1900 1750
+Wire Wire Line
+	5550 2450 5550 1550
+Connection ~ 5550 1550
+Wire Wire Line
+	5550 1550 1900 1550
+Wire Wire Line
+	5450 2450 5450 1350
+Connection ~ 5450 1350
+Wire Wire Line
+	5450 1350 1900 1350
 $EndSCHEMATC
